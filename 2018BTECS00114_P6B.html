@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UPSC form</title>
+</head>
+<body>
+    <form action="" method="get" onsubmit="sub()">
+        <header>
+            <div style="text-align: center;">
+                <h1>UPSC Exam 2021 Registration Form</h1>
+            </div>
+        </header>
+        <fieldset>
+            <legend style="text-align: center;"><b>Student Information</b></legend>
+    
+            <label for="name">First Name :</label> 
+            <input type="text" required  placeholder="Enter name"/><br><br>
+            <label for="name">Middle Name:</label> 
+            <input type="text" required placeholder="Middle name"/><br><br>
+            <label for="name">Last Name:</label>
+            <input type="text" required placeholder="Last name"/><br><br>
+            <label for="name">Mother's Name:</label>
+            <input type="text" required placeholder="Mother's name"/><br><br>
+            <label for="number">Mobile no.:</label>
+            <input type="number" required placeholder="Mobile no."/><br><br>
+            <label for="number">E-mail id:</label>
+            <input type="email" required placeholder="E-mail id"/><br><br>
+            <label for="name">Address:</label>
+            <input type="text" required placeholder="Address"/><br><br>
+    
+            <label for="pdf">Upload your Addhar card/PAN card for id proof:</label> &nbsp;&nbsp;
+            <input type="file" accept=".pdf"  required /> <br><br>
+    
+            <label >Do you want copy of form?</label>
+            <input type='checkbox' > <br> 
+             
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend style="text-align: center;"><b>Educational Information</b></legend>
+            
+                <label for="Qualification">Your Qualification:</label>
+                <select name="Qualification" id="Qualification" required  >
+                  <option value="">B.Tech</option>
+                  <option value="">M.Tech</option>
+                  <option value="">B.E.</option>
+                  <option value="">B.Com</option>
+                  <option value="">B.Sc</option>
+                  <option value="">B.A</option>
+                  <option value="">B.Pharm</option>
+                  <option value="">B.Arch</option>
+                  <option value="">B.BA</option>
+                  <option value="">M.BA</option>
+                </select>
+                <br><br>
+                <label for="Branch">Branch</label>
+                <select name="Branch" id="Branch" required>
+                  <option value="">CSE</option>
+                  <option value="">IT</option>
+                  <option value="">EEE</option>
+                  <option value="">ELE</option>
+                  <option value="">Mech</option>
+                  <option value="">Civil</option>
+                  <option value="">NA</option>
+                </select>
+                <br><br>
+                <label for="College">College:</label>
+                <input list="College" name="College" required>
+                <datalist id="College">
+                    <option value="WCE, Sangli">
+                    <option value="COEP">
+                    <option value="VJTI, Mumbai">
+                    <option value="PICT">
+                    <option value="IITB">
+                    <option value="IITM">
+                </datalist>
+                <br><br>
+                <label>Exam Seat no.:</label>
+                <input type="text" required placeholder="Exam Seat no."><br>
+    
+        </fieldset>
+        <br>
+    
+        <fieldset>
+            <legend style="text-align: center;"><b>Exam Preferences</b></legend>
+            <label for="Qualification">Your Exam Paper Branch:</label>
+                <select name="Qualification" id="Qualification" required >
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="B.E.">B.E.</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="B.A">B.A</option>
+                    <option value="B.Pharm">B.Pharm</option>
+                    <option value="B.Arch">B.Arch</option>
+                    <option value="B.BA">B.BA</option>
+                    <option value="M.BA">M.BA</option>
+                </select>
+            <br><br>
+            <label for="cars">Select college:</label>
+                <select name="College" id="College" required size="1">
+                  <optgroup label="Maharashtra">
+                    <option value="WCE, Sangli">WCE, Sangli</option>
+                    <option value="IITB">IITB</option>
+                    <option value="COEP">COEP</option>
+                    <option value="PICT">PICT</option>
+                  </optgroup>
+                  <optgroup label="Karnataka">
+                    <option value="NIT Suratkal">NIT Suratkal</option>
+                    <option value="NITTE">NITTE</option>
+                    <option value="IISc Bangalore">IISc Bangalore</option>
+                  </optgroup>
+                  <optgroup label="Madhya Pradesh">
+                    <option value="IIT Indore">IIT Indore</option>
+                  </optgroup>
+                </select>
+    
+        </fieldset>
+        <br>
+        <div style="text-align:center">
+            <button type="submit" style="text-align: center;"> Submit </button>
+            <button type="reset" style="text-align: center;"> Reset</button> 
+            <br>
+        </div>
+         </form>
+             
+         </div>
+    
+    
+            <script> 
+            function sub(){
+    
+                window.alert("Successfully submitted your form")
+            }
+            </script>
+</body>
+</html>
