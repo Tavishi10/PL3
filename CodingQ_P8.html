@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Min and Max of an array</title>
+    <link rel="stylesheet" href="CodeQ.css">
+</head>
+<body>
+    <header id="s1"><center><h1>Classic Algos</h1></center> 
+    </header><br><br>
+    <section><h3>PROBLEM STATEMENT:</h3>
+        <p class="p1">Write a program in any language to find the maximum and
+            minimum element in an array.</p>
+    </section><br><hr>
+    <section><h3>CODE:</h3><code class="p1">
+        int main()<br>
+        {<br>
+            &ensp;&ensp;&ensp;&ensp;int a[1000],i,n,min,max;<br>
+   
+            &ensp;&ensp;&ensp;&ensp;printf("Enter size of the array : ");<br>
+            &ensp;&ensp;&ensp;&ensp;scanf("%d",&n);<br>
+ 
+            &ensp;&ensp;&ensp;&ensp;printf("Enter elements in array : ");<br>
+            &ensp;&ensp;&ensp;&ensp;for(i=0; i<n; i++) <br>
+            {<br>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;scanf("%d",&a[i]);<br>
+                &ensp;&ensp;&ensp;&ensp;}   <br>
+ 
+            &ensp;&ensp;&ensp;&ensp;min=max=a[0];   <br>
+            &ensp;&ensp;&ensp;&ensp;for(i=1; i<n; i++)  <br>
+            {<br>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;if(min>a[i])<br>
+		        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;min=a[i];<br>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;if(max<a[i])
+                    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;max=a[i];<br>   
+                    &ensp;&ensp;&ensp;&ensp;}<br>
+            &ensp;&ensp;&ensp;&ensp;printf("minimum of array is : %d",min); <br>
+            &ensp;&ensp;&ensp;&ensp;printf("\nmaximum of array is : %d",max);<br>
+ 
+ 
+            &ensp;&ensp;&ensp;&ensp;return 0;<br>
+        }
+    </code>
+</section>
+<br><hr>
+    <section>
+        <h3>SAMPLE INPUT:</h3><p class="p1"><samp>Enter size of array: 5<br>Enter elements in array:<kbd>14</kbd><br>
+            <kbd>56</kbd><br>
+            <kbd>89</kbd><br>
+            <kbd>65</kbd><br>
+            <kbd>23</kbd><br>
+        </samp></p>
+    </section>
+    <br><hr>
+    <section>
+        <h3>SAMPLE OUTPUT:</h3><p class="p1"><samp>Minimum of array is : 14<br>Maximum of array is : 89</samp></p>
+    </section>
+    <br><hr>
+    <section>
+        <h3>COMPLEXITY:</h3>
+        <p class="p1">Time complexity of the above program is: O(n)</p>
+    </section>
+    <section class="p1">
+        <p>For more clarification, visit this site:</p>
+        <a href="https://javatutoring.com/c-program-find-maximum-minimum-element-in-array/">Link to the reference site</a>
+    </section><br><hr>
+    <footer>
+        <address>
+        Written by Tavishi Suvarna<br>
+        Send your queries at: suvarnatavishi7@gmail.com<br>
+        Affiliated to: WCE, Sangli
+        </address>
+    </footer>
+</body>
+</html>

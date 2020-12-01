@@ -1,0 +1,24 @@
+address{
+    background-color: #0A0A0A;
+    color: #F4E9E9;
+    padding: 20px;
+}
+
+section{
+    background-color: #F59256;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+h3{
+    background-color: rgb(15, 102, 203);
+    font-size: 32px;
+    text-align: center;
+}
+
+#s1{
+    background-color: #31034D;
+    color: white;
+    font-size: 40px;
+    padding: 5px;
+}
